@@ -1,0 +1,103 @@
+@keyframes slide {
+  0% {
+    transform: translateX(-50vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap");
+body {
+  width: 100%;
+  margin: 5vh 0 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(187, 153, 221, 0.08);
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 2vh;
+  font-weight: 300;
+  color: #9455d3;
+}
+
+#avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#avatar img {
+  border-radius: 9vh;
+  height: 18vh;
+  width: 18vh;
+}
+
+#avatar::before {
+  content: "";
+  border-radius: 10vh;
+  height: 19vh;
+  width: 19vh;
+  background-color: transparent;
+  border: 1px solid #24be20;
+  position: absolute;
+  align-self: center;
+}
+
+#link-list {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 3vh;
+}
+
+#link-list button {
+  padding: 1.2vh 20vw;
+  background-color: transparent;
+
+  border: 2px solid #9455d3;
+  border-radius: 1vh;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 3vh;
+  font-weight: 500;
+  color: #9455d3;
+  cursor: pointer;
+}
+
+#link-list button:hover {
+  transform: scale(1.02);
+  transition: 0.1s linear;
+}
+.animation {
+  animation: slide 0.35s ease-out;
+}
+.prev-animation {
+  transform: translateX(-150vw);
+}
+
+#social-list {
+  display: flex;
+  font-size: 70vw;
+  justify-content: center;
+  width: 40vw;
+}
+
+#social-list a {
+  padding: 5vh 4vw 3vh 4vw;
+  text-decoration: none;
+}
+
+#social-list img:hover {
+  transform: scale(1.1);
+  transition: 0.1s ease-out;
+}
+footer p {
+  font-size: 1.5vh;
+}
